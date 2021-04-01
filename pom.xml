@@ -5,6 +5,9 @@
     <modules>
         <module>mybatis</module>
         <module>secucity</module>
+        <module>myjpa</module>
+        <module>unified</module>
+        <module>MD5learn</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -21,6 +24,7 @@
     <properties>
         <java.version>1.8</java.version>
         <swagger.version>2.7.0</swagger.version>
+        <jjwt.version>0.9.0</jjwt.version>
     </properties>
     <dependencies>
         <dependency>
@@ -111,7 +115,12 @@
             <version>${swagger.version}</version>
         </dependency>
 
-
+        <!--jwt-->
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt</artifactId>
+            <version>${jjwt.version}</version>
+        </dependency>
     </dependencies>
 
     <build>
