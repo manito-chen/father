@@ -1,0 +1,14 @@
+
+spring:
+  aop:
+    proxy-target-class: true
+    auto: true
+  security:
+    user:
+      name: admin
+      password: 123456
+logging:
+  config: classpath:logback.xml
+  myspringbootAoplearning: trace
+server:
+  port: 8088
